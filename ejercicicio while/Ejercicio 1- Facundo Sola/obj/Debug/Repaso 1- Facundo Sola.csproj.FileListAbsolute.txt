@@ -1,0 +1,8 @@
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\bin\Debug\Repaso 1- Facundo Sola.exe.config
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\bin\Debug\Repaso 1- Facundo Sola.exe
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\bin\Debug\Repaso 1- Facundo Sola.pdb
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\obj\Debug\Repaso 1- Facundo Sola.csproj.AssemblyReference.cache
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\obj\Debug\Repaso 1- Facundo Sola.csproj.SuggestedBindingRedirects.cache
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\obj\Debug\Repaso 1- Facundo Sola.csproj.CoreCompileInputs.cache
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\obj\Debug\Repaso 1- Facundo Sola.exe
+C:\Users\facundo sola\Documents\GitHub\Programaccion1_2023-Facu-Sola\Repaso 1- Facundo Sola\obj\Debug\Repaso 1- Facundo Sola.pdb
