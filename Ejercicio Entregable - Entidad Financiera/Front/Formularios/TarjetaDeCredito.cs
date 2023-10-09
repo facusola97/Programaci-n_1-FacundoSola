@@ -12,9 +12,9 @@ namespace Front.Formularios
 {
     public partial class TarjetaDeCredito : Form
     {
-        public TarjetaDeCredito()
+        public TarjetaDeCredito ( )
         {
-            InitializeComponent();
+            InitializeComponent ();
         }
     }
 }

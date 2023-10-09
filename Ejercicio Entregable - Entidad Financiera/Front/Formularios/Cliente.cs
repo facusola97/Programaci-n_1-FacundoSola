@@ -12,9 +12,9 @@ namespace Front.Formularios
 {
     public partial class Cliente : Form
     {
-        public Cliente()
+        public Cliente ( )
         {
-            InitializeComponent();
+            InitializeComponent ();
         }
     }
 }

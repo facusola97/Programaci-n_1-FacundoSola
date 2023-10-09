@@ -116,3 +116,4 @@ C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\SistemaEntidadFinanc
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.CuentaBancaria.resources
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.Inicio.resources
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.TarjetaDeCredito.resources
+C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Properties.Resources.resources

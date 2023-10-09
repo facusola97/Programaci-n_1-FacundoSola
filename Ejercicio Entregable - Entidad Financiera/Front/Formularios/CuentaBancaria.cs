@@ -12,9 +12,9 @@ namespace Front.Formularios
 {
     public partial class CuentaBancaria : Form
     {
-        public CuentaBancaria()
+        public CuentaBancaria ( )
         {
-            InitializeComponent();
+            InitializeComponent ();
         }
     }
 }

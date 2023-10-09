@@ -12,9 +12,14 @@ namespace Front.Formularios
 {
     public partial class Inicio : Form
     {
-        public Inicio()
+        public Inicio ( )
         {
-            InitializeComponent();
+            InitializeComponent ();
+        }
+
+        private void Inicio_Load ( object sender, EventArgs e )
+        {
+
         }
     }
 }
