@@ -136,7 +136,12 @@ namespace Back
 
 
 
+        public List<CuentaBancaria> MostrarCuentas ( ) // retorna los valores de cuenta - configurarlo con el form
+        {
 
+            return db_context.CuentasBancarias.ToList ();
+
+        } 
 
 
 

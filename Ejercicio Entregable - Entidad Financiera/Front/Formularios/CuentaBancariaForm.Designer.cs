@@ -37,12 +37,12 @@
             pictureBox1 = new PictureBox ();
             txtdni = new Label ();
             txt1 = new TextBox ();
-            txtNombre = new TextBox ();
             label2 = new Label ();
             label3 = new Label ();
             txt2 = new TextBox ();
             dataGridView1 = new DataGridView ();
             button4 = new Button ();
+            comboBox1 = new ComboBox ();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit ();
@@ -55,7 +55,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font ("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point (5, 236);
+            button1.Location = new Point (5, 78);
             button1.Name = "button1";
             button1.Size = new Size (173, 54);
             button1.TabIndex = 15;
@@ -130,7 +130,7 @@
             txtdni.BackColor = Color.RoyalBlue;
             txtdni.Font = new Font ("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             txtdni.ForeColor = SystemColors.ActiveCaptionText;
-            txtdni.Location = new Point (174, 293);
+            txtdni.Location = new Point (180, 145);
             txtdni.Name = "txtdni";
             txtdni.Size = new Size (162, 21);
             txtdni.TabIndex = 19;
@@ -138,18 +138,11 @@
             // 
             // txt1
             // 
-            txt1.Location = new Point (381, 291);
+            txt1.Location = new Point (180, 169);
             txt1.Name = "txt1";
             txt1.Size = new Size (201, 23);
             txt1.TabIndex = 20;
             txt1.TextChanged += txt1_TextChanged;
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point (381, 225);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size (201, 23);
-            txtNombre.TabIndex = 21;
             // 
             // label2
             // 
@@ -157,11 +150,11 @@
             label2.BackColor = Color.RoyalBlue;
             label2.Font = new Font ("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point (174, 223);
+            label2.Location = new Point (180, 78);
             label2.Name = "label2";
-            label2.Size = new Size (158, 21);
+            label2.Size = new Size (160, 21);
             label2.TabIndex = 22;
-            label2.Text = "Ingrese su Nombre: ";
+            label2.Text = "Selecciona el Titular:";
             // 
             // label3
             // 
@@ -169,7 +162,7 @@
             label3.BackColor = Color.RoyalBlue;
             label3.Font = new Font ("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point (174, 358);
+            label3.Location = new Point (180, 212);
             label3.Name = "label3";
             label3.Size = new Size (201, 21);
             label3.TabIndex = 23;
@@ -177,7 +170,7 @@
             // 
             // txt2
             // 
-            txt2.Location = new Point (381, 356);
+            txt2.Location = new Point (180, 246);
             txt2.Name = "txt2";
             txt2.Size = new Size (201, 23);
             txt2.TabIndex = 24;
@@ -208,17 +201,25 @@
             button4.Text = "Realizar Deposito";
             button4.UseVisualStyleBackColor = false;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point (180, 102);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size (162, 23);
+            comboBox1.TabIndex = 27;
+            // 
             // CuentaBancariaForm
             // 
             AutoScaleDimensions = new SizeF (7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size (919, 514);
+            Controls.Add (comboBox1);
             Controls.Add (button4);
             Controls.Add (dataGridView1);
             Controls.Add (txt2);
             Controls.Add (label3);
             Controls.Add (label2);
-            Controls.Add (txtNombre);
             Controls.Add (txt1);
             Controls.Add (txtdni);
             Controls.Add (button1);
@@ -247,11 +248,11 @@
         private PictureBox pictureBox1;
         private Label txtdni;
         private TextBox txt1;
-        private TextBox txtNombre;
         private Label label2;
         private Label label3;
         private TextBox txt2;
         private DataGridView dataGridView1;
         private Button button4;
+        private ComboBox comboBox1;
     }
 }
