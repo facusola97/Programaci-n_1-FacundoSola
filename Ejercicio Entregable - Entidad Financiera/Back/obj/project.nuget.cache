@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wKqOogVKgykl6veTWKq9KrhP/5Z4y2ar1Y6cVTKmivOvBDt1hOkOXjxFvfHoq1SctU3nkot2AqsFaZQ/6mEBKQ==",
+  "dgSpecHash": "8LIApYhHAMt5q5xgetnwAoIHwQynh7wglg8FHafhGVJAno26pdkn8WwtVgikHpzUfxPUY7d1xviC7AKeVp7c/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

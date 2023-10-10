@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

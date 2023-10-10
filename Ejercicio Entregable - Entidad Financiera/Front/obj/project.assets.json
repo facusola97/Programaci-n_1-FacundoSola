@@ -2644,11 +2644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Front\\Front.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj",
       "projectName": "Front",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Front\\Front.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Front\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2665,8 +2665,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\SistemaEntidadFinanciera\\Back\\Back.csproj"
+            "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj"
             }
           }
         }
