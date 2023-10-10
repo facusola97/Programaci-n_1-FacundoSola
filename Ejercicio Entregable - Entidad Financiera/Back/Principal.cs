@@ -141,11 +141,27 @@ namespace Back
 
             return db_context.CuentasBancarias.ToList ();
 
-        } 
+        }
+
+        // metodo para clientes o lista de titulares
+
+        public List<Cliente> MostrarTodoslosClientes ( ) 
+        {
+
+        
+            return db_context.Clientes.ToList ();
+        
+        
+        }
+
+        public List<TarjetaDeCredito> MostrasTarjetas ( ) 
+        {
 
 
-
-
+            return db_context.TarjetasDeCredito.ToList ( );
+        
+        
+        }
 
 
 

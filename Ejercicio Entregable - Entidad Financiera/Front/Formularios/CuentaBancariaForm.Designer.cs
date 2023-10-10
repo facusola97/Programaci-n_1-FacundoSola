@@ -69,7 +69,7 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font ("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.InfoText;
-            button2.Location = new Point (5, 310);
+            button2.Location = new Point (5, 212);
             button2.Name = "button2";
             button2.Size = new Size (173, 54);
             button2.TabIndex = 16;
@@ -181,11 +181,11 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point (590, 223);
+            dataGridView1.Location = new Point (387, 145);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size (328, 289);
+            dataGridView1.Size = new Size (531, 367);
             dataGridView1.TabIndex = 25;
             // 
             // button4
