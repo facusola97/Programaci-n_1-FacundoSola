@@ -9,7 +9,7 @@ namespace Back
     public class Principal
     {
         public static BancoDbContext db_context = new BancoDbContext ();
-       
+
         public void AgregarCliente ( Cliente cliente )                   ///CLiente
         {
             db_context.Clientes.Add (cliente);
@@ -17,14 +17,14 @@ namespace Back
         }
 
 
-        public static void CrearCuentaBancaria (  Cliente Nombre, Tipos tipo ) //Metodo 1 para cuenta bancaria
+        public static void CrearCuentaBancaria ( Cliente Nombre, Tipos tipo ) //Metodo 1 para cuenta bancaria
         {
             CuentaBancaria newCuenta = new CuentaBancaria (Nombre, tipo);
 
 
 
             // Llama al método para generar el número de cuenta y asígnalo a la propiedad.
-            newCuenta.NumeroCuenta = GenerarNumeroCuenta (newCuenta.dni) ;
+            newCuenta.NumeroCuenta = GenerarNumeroCuenta (newCuenta.dni);
             newCuenta.Titular_Cuenta = Nombre;
             newCuenta.NombreTitular = Nombre.NombreCompleto;
             newCuenta.Tipo = tipo;
@@ -32,7 +32,7 @@ namespace Back
             db_context.SaveChanges ();
 
 
- 
+
         }
 
 
@@ -51,9 +51,9 @@ namespace Back
 
 
         }
-        private static string GenerarNumeroCuenta ( string dni)
+        private static string GenerarNumeroCuenta ( string dni )
         {
-          
+
             string numeroAleatorio = new Random ().Next (1000, 9999).ToString ();
 
             // Combina todo para formar el número de cuenta.
@@ -131,16 +131,14 @@ namespace Back
         }
 
 
-    
+
 
 
 
         public List<CuentaBancaria> MostrarCuentas ( ) // retorna los valores de cuenta - configurarlo con el form
-        {
-
-            return db_context.CuentasBancarias.ToList ();
-
-        }
+=>      {       
+            db_context.CuentasBancarias.ToList();
+        }   
 
         // metodo para clientes o lista de titulares
 
