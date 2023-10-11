@@ -39,11 +39,11 @@ namespace Front.Formularios
 
         private void button1_Click ( object sender, EventArgs e )
         {
-            Cliente nuevoCliente = new Cliente (txt1.Text, txt2.Text, int.Parse (txt3.Text));
+            Cliente nuevoCliente = new Cliente (txt1.Text, txt2.Text, txt3.Text);
 
             nuevoCliente.Nombre = txt1.Text;
             nuevoCliente.Apellido = txt2.Text;
-            nuevoCliente.dni = int.Parse (txt3.Text);
+            nuevoCliente.dni = txt3.Text;
 
 
             dbContext.Clientes.Add (nuevoCliente);

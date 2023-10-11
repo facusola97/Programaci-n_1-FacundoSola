@@ -1,6 +1,6 @@
 ﻿using Back.Clases;
+using Microsoft.Identity.Client;
 using System.Text;
-
 
 
 
@@ -9,7 +9,7 @@ namespace Back
     public class Principal
     {
         public static BancoDbContext db_context = new BancoDbContext ();
-
+       
         public void AgregarCliente ( Cliente cliente )                   ///CLiente
         {
             db_context.Clientes.Add (cliente);
@@ -17,12 +17,22 @@ namespace Back
         }
 
 
-        public static void CrearCuentaBancaria ( string NumeroCuenta, double saldo, string NombreTitular ) //Metodo 1 para cuenta bancaria
+        public static void CrearCuentaBancaria (  Cliente Nombre, Tipos tipo ) //Metodo 1 para cuenta bancaria
         {
-            CuentaBancaria newcuenta = new CuentaBancaria ( NumeroCuenta, saldo, NombreTitular);
+            CuentaBancaria newCuenta = new CuentaBancaria (Nombre, tipo);
 
-            db_context.CuentasBancarias.Add (newcuenta);
+
+
+            // Llama al método para generar el número de cuenta y asígnalo a la propiedad.
+            newCuenta.NumeroCuenta = GenerarNumeroCuenta (newCuenta.dni) ;
+            newCuenta.Titular_Cuenta = Nombre;
+            newCuenta.NombreTitular = Nombre.NombreCompleto;
+            newCuenta.Tipo = tipo;
+            db_context.CuentasBancarias.Add (newCuenta);
             db_context.SaveChanges ();
+
+
+ 
         }
 
 
@@ -41,16 +51,13 @@ namespace Back
 
 
         }
-        private string GenerarNumeroCuenta ( int clienteId, Tipos tipo )
+        private static string GenerarNumeroCuenta ( string dni)
         {
           
-            string tipoCuentaAbreviado = tipo.ToString ().Substring (0, 3).ToUpper ();
-
-            // Combina el ID del cliente con un número aleatorio de 4 dígitos.
             string numeroAleatorio = new Random ().Next (1000, 9999).ToString ();
 
             // Combina todo para formar el número de cuenta.
-            string numeroCuenta = $"{tipoCuentaAbreviado}-{clienteId:D4}-{numeroAleatorio}";
+            string numeroCuenta = $"{numeroAleatorio}-{dni:D4}-{numeroAleatorio}";
 
             return numeroCuenta;
         }
@@ -124,15 +131,7 @@ namespace Back
         }
 
 
-        public string GenerarNumeroCuenta ( int parametro )
-        {
-
-            string numeroAleatorio = new Random ().Next (1000, 9999).ToString ();
-
-            string numeroCuenta = $"{numeroAleatorio}-{parametro:D4}-{numeroAleatorio}";
-
-            return numeroCuenta;
-        }
+    
 
 
 

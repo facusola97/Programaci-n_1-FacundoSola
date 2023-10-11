@@ -39,10 +39,10 @@
             txt1 = new TextBox ();
             label2 = new Label ();
             label3 = new Label ();
-            txt2 = new TextBox ();
             dataGridView1 = new DataGridView ();
             button4 = new Button ();
             comboBox1 = new ComboBox ();
+            comboBox2 = new ComboBox ();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit ();
@@ -142,7 +142,6 @@
             txt1.Name = "txt1";
             txt1.Size = new Size (201, 23);
             txt1.TabIndex = 20;
-            txt1.TextChanged += txt1_TextChanged;
             // 
             // label2
             // 
@@ -167,13 +166,6 @@
             label3.Size = new Size (201, 21);
             label3.TabIndex = 23;
             label3.Text = "Ingrese el Tipo de Cuenta:";
-            // 
-            // txt2
-            // 
-            txt2.Location = new Point (180, 246);
-            txt2.Name = "txt2";
-            txt2.Size = new Size (201, 23);
-            txt2.TabIndex = 24;
             // 
             // dataGridView1
             // 
@@ -209,15 +201,23 @@
             comboBox1.Size = new Size (162, 23);
             comboBox1.TabIndex = 27;
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point (184, 236);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size (185, 23);
+            comboBox2.TabIndex = 28;
+            // 
             // CuentaBancariaForm
             // 
             AutoScaleDimensions = new SizeF (7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size (919, 514);
+            Controls.Add (comboBox2);
             Controls.Add (comboBox1);
             Controls.Add (button4);
             Controls.Add (dataGridView1);
-            Controls.Add (txt2);
             Controls.Add (label3);
             Controls.Add (label2);
             Controls.Add (txt1);
@@ -250,9 +250,9 @@
         private TextBox txt1;
         private Label label2;
         private Label label3;
-        private TextBox txt2;
         private DataGridView dataGridView1;
         private Button button4;
         private ComboBox comboBox1;
+        private ComboBox comboBox2;
     }
 }

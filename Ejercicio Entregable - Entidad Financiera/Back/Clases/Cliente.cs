@@ -17,18 +17,17 @@ namespace Back.Clases
 
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public int dni { get; set; }
-
-        public Cliente(int ClienteId ,string nombre, string apellido, int dni)
+        public string dni { get; set; }
+        
+        public Cliente(int ClienteId ,string nombre, string apellido, string dni)
         {
             IdCliente = ClienteId;
             Nombre = nombre;
             Apellido = apellido;
             this.dni = dni;
         }
-        public Cliente(string nombre, string apellido, int dni)
+        public Cliente(string nombre, string apellido, string dni)
         {
-            // Supongamos que aquí generamos un IdCliente único, por ejemplo, utilizando algún método de generación de ID único.
            
             Nombre = nombre;
             Apellido = apellido;
@@ -36,13 +35,25 @@ namespace Back.Clases
         }
 
 
-        
+       public string NombreCompleto { get { return Nombre + " " + Apellido; } }
 
 
+        public Cliente ( string dni )
+        {
+            
 
 
+            this.dni = dni;
+        }
 
 
+        public Cliente (  )
+        {
+            
+
+
+            
+        }
 
 
     }

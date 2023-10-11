@@ -1,6 +1,7 @@
 ﻿using Back;
 using Back.Clases;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,14 +36,25 @@ namespace Front.Formularios
 
         private void CuentaBancaria_Load ( object sender, EventArgs e )
         {
-            Principal.db_context.CuentasBancarias.Load ();
             dataGridView1.DataSource = null;
+            dataGridView1.DataSource = backP.MostrarCuentas ();
+            dataGridView1.Columns["Titular"].Visible = false;
+            dataGridView1.Columns["NombreTitular"].Width = 150;
             dataGridView1.DataSource = Principal.db_context.CuentasBancarias.Local.ToBindingList ();
+
+            comboBox1.DataSource = backP.MostrarTodoslosClientes ();
+            comboBox1.DisplayMember = "NombreCompleto";
         }
 
         private void button1_Click ( object sender, EventArgs e )
         {
-            //CuentaBancaria cuenta = new CuentaBancaria (txt1, txtdni, txtNombre);
+
+            Cliente cliente = new Cliente () ;
+            Tipos tipodecuenta = (comboBox2.SelectedItem == null) ? Tipos.CajaAhorro : Tipos.CuentaCorriente;
+            Principal.CrearCuentaBancaria (cliente,tipodecuenta);
+
+
+
 
 
 
@@ -50,12 +62,7 @@ namespace Front.Formularios
 
         }
 
-        private void bindingSource1_CurrentChanged ( object sender, EventArgs e )
-        {
-
-        }
-
-        private void txt1_TextChanged ( object sender, EventArgs e )
+        private void txt2_TextChanged ( object sender, EventArgs e )
         {
 
         }
