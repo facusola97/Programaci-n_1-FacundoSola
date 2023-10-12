@@ -8,6 +8,6 @@ namespace Back.Clases
 {
     public enum Estados
     {
-        Activa,Pausada,Bloqueada,
+        Activa, Pausada, Bloqueada,
     }
 }

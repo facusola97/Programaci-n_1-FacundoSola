@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Front\\Front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\Back.csproj",
         "projectName": "Back",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\Back.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://packagesource": {}
         },
@@ -42,17 +43,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             }
           },
           "imports": [
@@ -75,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Front\\Front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Front\\Front.csproj",
         "projectName": "Front",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\Front.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Front\\Front.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Front\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Front\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,6 +93,7 @@
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://packagesource": {}
         },
@@ -99,8 +101,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\github proyecto\\Proyecto-Order-Up\\Programaci-n_1-FacundoSola\\Ejercicio Entregable - Entidad Financiera\\Back\\Back.csproj"
+              "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\Back.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\1) ejerciccio entregable version 2\\protecto sin contructor\\SistemaEntidadFinanciera\\Back\\Back.csproj"
               }
             }
           }

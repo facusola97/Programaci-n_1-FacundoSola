@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Back;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,51 +14,53 @@ namespace Front.Formularios
 {
     public partial class TarjetaDeCreditoForm : Form
     {
+        Principal back = new Principal ();
+        BancoDbContextcs dbContext = new BancoDbContextcs ();
+
+
+
         public TarjetaDeCreditoForm ( )
         {
             InitializeComponent ();
         }
 
-        private void dataGridView1_CellContentClick ( object sender, DataGridViewCellEventArgs e )
+
+        public void ActualizarDataGridView ( )
+        {
+
+            var tarjetas = dbContext.TarjetasDeCredito.ToList ();
+
+            dataGridView1.DataSource = tarjetas;
+
+        }
+
+
+        private void button1_Click ( object sender, EventArgs e )
         {
 
         }
 
-        private void button4_Click ( object sender, EventArgs e )
+        private void button3_Click ( object sender, EventArgs e )
         {
-        }
-
-        private void button5_Click ( object sender, EventArgs e )
-        {
-            InicioForm inicio = new InicioForm ();
+            Inicio inicio = new Inicio ();
             inicio.Show ();
             this.Hide ();
         }
 
-        private void pictureBox2_Click ( object sender, EventArgs e )
-        {
-        }
-
-        private void label1_Click ( object sender, EventArgs e )
-        {
-        }
-
-        private void pictureBox1_Click ( object sender, EventArgs e )
-        {
-        }
-
-        private void button1_Click ( object sender, EventArgs e )
-        {
-        }
-
-        private void button4_Click_1 ( object sender, EventArgs e )
+        private void button5_Click ( object sender, EventArgs e )
         {
 
         }
 
-        private void label4_Click ( object sender, EventArgs e )
+        private void TarjetaDeCreditoForm_Load ( object sender, EventArgs e )
         {
+            comboBox1.DataSource = back.MostrarTodoslosClientes ();
+            comboBox1.DisplayMember = "NombreCompleto";
 
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = back.MostrasTarjetas ();
+            dataGridView1.Columns["LimiteCredito"].Width = 150;
+            dataGridView1.Columns["Titular"].Visible = false;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Back.Clases
 {
     public enum Tipos
     {
-        CajaAhorro,CuentaCorriente,
+        CajaAhorro, CuentaCorriente,
     }
+
 }

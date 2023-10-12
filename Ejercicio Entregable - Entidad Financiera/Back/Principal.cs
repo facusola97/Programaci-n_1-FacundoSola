@@ -1,14 +1,17 @@
 ﻿using Back.Clases;
-using Microsoft.Identity.Client;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 
 
 namespace Back
 {
     public class Principal
     {
-        public static BancoDbContext db_context = new BancoDbContext ();
+        public static BancoDbContextcs db_context = new BancoDbContextcs ();
 
         public void AgregarCliente ( Cliente cliente )                   ///CLiente
         {
@@ -16,18 +19,19 @@ namespace Back
             db_context.SaveChanges ();
         }
 
+       
 
-        public static void CrearCuentaBancaria ( Cliente Nombre, Tipos tipo ) //Metodo 1 para cuenta bancaria
+        
+
+
+        public static void CrearCuentaBancaria ( Cliente Nombre, Tipos tipo, string dni ) //Metodo 1 para cuenta bancaria
         {
-            CuentaBancaria newCuenta = new CuentaBancaria (Nombre, tipo);
-
-
-
-            // Llama al método para generar el número de cuenta y asígnalo a la propiedad.
-            newCuenta.NumeroCuenta = GenerarNumeroCuenta (newCuenta.dni);
+            CuentaBancaria newCuenta = new CuentaBancaria ();
+            newCuenta.NumeroCuenta = GenerarNumeroCuenta (dni );
             newCuenta.Titular_Cuenta = Nombre;
             newCuenta.NombreTitular = Nombre.NombreCompleto;
             newCuenta.Tipo = tipo;
+            newCuenta.Saldo = 0;
             db_context.CuentasBancarias.Add (newCuenta);
             db_context.SaveChanges ();
 
@@ -35,7 +39,12 @@ namespace Back
 
         }
 
+        public static void EmitirTarjeta(double limite,double monto, double saldo)
+        {
+            
 
+
+        }
 
 
         public static void RealizarDeposito ( int IdCuenta, double saldo ) //Metodo 2 para cuenta bancaria
@@ -51,6 +60,7 @@ namespace Back
 
 
         }
+
         private static string GenerarNumeroCuenta ( string dni )
         {
 
@@ -108,7 +118,7 @@ namespace Back
 
         public static string GenerarResumenTarjeta ( int idTarjeta )      //Metodo 2 para tarjeta------ buscar como hacerlo mas simple           
         {
-            TarjetaDeCredito tarjeta = db_context.TarjetasDeCredito.Find (idTarjeta);
+            var tarjeta = db_context.TarjetasDeCredito.Find (idTarjeta);
             if (tarjeta != null)
             {
                 StringBuilder ret = new StringBuilder ();
@@ -125,43 +135,54 @@ namespace Back
             }
             return "Error";
         }
+
+
         public static List<TarjetaDeCredito> ListaRetornarTarjetas ( )
         {
             return db_context.TarjetasDeCredito.ToList ();
         }
 
 
-
-
-
-
         public List<CuentaBancaria> MostrarCuentas ( ) // retorna los valores de cuenta - configurarlo con el form
-=>      {       
-            db_context.CuentasBancarias.ToList();
-        }   
+        {
+            return db_context.CuentasBancarias.ToList ();
+
+
+
+        }
 
         // metodo para clientes o lista de titulares
 
-        public List<Cliente> MostrarTodoslosClientes ( ) 
+        public List<Cliente> MostrarTodoslosClientes ( )
         {
 
-        
+
             return db_context.Clientes.ToList ();
-        
-        
+
+
         }
 
-        public List<TarjetaDeCredito> MostrasTarjetas ( ) 
+        public List<TarjetaDeCredito> MostrasTarjetas ( )
         {
+            return db_context.TarjetasDeCredito.ToList ();
 
 
-            return db_context.TarjetasDeCredito.ToList ( );
-        
-        
         }
 
+        public static List<Tipos> mostrartipos ( )
+        {
+            List<Tipos> tipos = new List<Tipos> ();
 
+            // Agregar los valores del enum a la lista.
+            tipos.Add (Tipos.CajaAhorro);
+            tipos.Add (Tipos.CuentaCorriente);
+
+            return tipos;
+        }
 
 
     }
+
 }
+
+
