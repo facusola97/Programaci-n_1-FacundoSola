@@ -47,9 +47,9 @@ namespace Back
         }
 
 
-        public static void RealizarDeposito ( int IdCuenta, double saldo ) //Metodo 2 para cuenta bancaria
+        public static void RealizarDeposito ( string Nrocuenta, double saldo ) //Metodo 2 para cuenta bancaria
         {
-            var cuenta = db_context.CuentasBancarias.Find (IdCuenta);
+            var cuenta = db_context.CuentasBancarias.Find (Nrocuenta); // poner como parametro el numero de cuenta
             if (cuenta != null)
             {
                 cuenta.Saldo += saldo;
@@ -61,12 +61,12 @@ namespace Back
 
         }
 
-        private static string GenerarNumeroCuenta ( string dni )
+        public static string GenerarNumeroCuenta ( string dni )
         {
 
-            string numeroAleatorio = new Random ().Next (1000, 9999).ToString ();
+            string numeroAleatorio = new Random ().Next (100000, 999999).ToString ();
 
-            // Combina todo para formar el número de cuenta.
+            
             string numeroCuenta = $"{numeroAleatorio}-{dni:D4}-{numeroAleatorio}";
 
             return numeroCuenta;

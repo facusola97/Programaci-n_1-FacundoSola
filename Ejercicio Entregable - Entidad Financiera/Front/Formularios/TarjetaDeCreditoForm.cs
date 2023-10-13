@@ -62,5 +62,10 @@ namespace Front.Formularios
             dataGridView1.Columns["LimiteCredito"].Width = 150;
             dataGridView1.Columns["Titular"].Visible = false;
         }
+
+        private void comboBox1_SelectedIndexChanged ( object sender, EventArgs e )
+        {
+
+        }
     }
 }

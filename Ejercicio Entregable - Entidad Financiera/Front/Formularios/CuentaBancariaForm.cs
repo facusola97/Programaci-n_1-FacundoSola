@@ -17,7 +17,7 @@ namespace Front.Formularios
     {
         Principal back = new Principal ();
         BancoDbContextcs dbContext = new BancoDbContextcs ();
-          
+
 
         public void ActualizarDataGridView ( )
         {
@@ -73,11 +73,12 @@ namespace Front.Formularios
 
         private void button1_Click_1 ( object sender, EventArgs e )
         {
+            // poner como parametro  data
 
+            CuentaBancaria cuentaSeleccionada = (CuentaBancaria)dataGridView1.CurrentRow.DataBoundItem;
 
+            Principal.RealizarDeposito (cuentaSeleccionada.);
 
-
-            
         }
 
         private void button4_Click ( object sender, EventArgs e )
@@ -85,7 +86,7 @@ namespace Front.Formularios
             Tipos tipos = (comboBox2.SelectedIndex == 0) ? Tipos.CajaAhorro : Tipos.CuentaCorriente;
             string dni = txtdni.Text;
 
-            Principal.CrearCuentaBancaria ((Cliente)comboBox1.SelectedItem,tipos,dni );
+            Principal.CrearCuentaBancaria ((Cliente)comboBox1.SelectedItem, tipos, dni);
 
             ActualizarDataGridView ();
 

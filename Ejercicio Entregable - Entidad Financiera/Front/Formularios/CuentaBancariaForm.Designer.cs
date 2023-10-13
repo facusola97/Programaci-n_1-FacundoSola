@@ -42,6 +42,8 @@
             button1 = new Button ();
             comboBox2 = new ComboBox ();
             label3 = new Label ();
+            textBox1 = new TextBox ();
+            label5 = new Label ();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit ();
@@ -93,7 +95,7 @@
             label2.BackColor = Color.RoyalBlue;
             label2.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point (-2, 163);
+            label2.Location = new Point (157, 98);
             label2.Name = "label2";
             label2.Size = new Size (142, 20);
             label2.TabIndex = 24;
@@ -111,7 +113,7 @@
             // 
             // txtdni
             // 
-            txtdni.Location = new Point (-2, 186);
+            txtdni.Location = new Point (157, 121);
             txtdni.Name = "txtdni";
             txtdni.Size = new Size (142, 23);
             txtdni.TabIndex = 20;
@@ -127,9 +129,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point (-3, 304);
+            button4.Location = new Point (205, 188);
             button4.Name = "button4";
-            button4.Size = new Size (191, 36);
+            button4.Size = new Size (135, 43);
             button4.TabIndex = 16;
             button4.Text = "Crear Cuenta Bancaria";
             button4.UseVisualStyleBackColor = true;
@@ -140,7 +142,7 @@
             pictureBox1.BackColor = Color.RoyalBlue;
             pictureBox1.Location = new Point (-6, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size (194, 451);
+            pictureBox1.Size = new Size (346, 451);
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
             // 
@@ -178,7 +180,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point (-3, 239);
+            comboBox2.Location = new Point (-2, 188);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size (174, 23);
             comboBox2.TabIndex = 28;
@@ -189,17 +191,38 @@
             label3.BackColor = Color.RoyalBlue;
             label3.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point (-2, 216);
+            label3.Location = new Point (-2, 165);
             label3.Name = "label3";
             label3.Size = new Size (190, 20);
             label3.TabIndex = 29;
             label3.Text = "Seleccione el Tipo de Cuenta";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point (-2, 303);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size (142, 23);
+            textBox1.TabIndex = 30;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.RoyalBlue;
+            label5.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ControlText;
+            label5.Location = new Point (-2, 280);
+            label5.Name = "label5";
+            label5.Size = new Size (108, 20);
+            label5.TabIndex = 31;
+            label5.Text = "Ingrese el saldo";
             // 
             // CuentaBancariaForm
             // 
             AutoScaleDimensions = new SizeF (7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size (967, 450);
+            Controls.Add (label5);
+            Controls.Add (textBox1);
             Controls.Add (label3);
             Controls.Add (comboBox2);
             Controls.Add (button1);
@@ -211,9 +234,9 @@
             Controls.Add (button3);
             Controls.Add (button4);
             Controls.Add (label4);
-            Controls.Add (pictureBox2);
             Controls.Add (button2);
             Controls.Add (pictureBox1);
+            Controls.Add (pictureBox2);
             Name = "CuentaBancariaForm";
             Text = "CuentaBancariaForm";
             Load += CuentaBancariaForm_Load;
@@ -239,5 +262,7 @@
         private Button button1;
         private ComboBox comboBox2;
         private Label label3;
+        private TextBox textBox1;
+        private Label label5;
     }
 }

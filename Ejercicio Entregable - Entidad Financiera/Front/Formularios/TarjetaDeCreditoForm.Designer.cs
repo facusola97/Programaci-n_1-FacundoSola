@@ -43,6 +43,7 @@
             label4 = new Label ();
             pictureBox2 = new PictureBox ();
             comboBox1 = new ComboBox ();
+            textBox1 = new TextBox ();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit ();
@@ -72,7 +73,7 @@
             label2.BackColor = Color.RoyalBlue;
             label2.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point (12, 214);
+            label2.Location = new Point (-2, 151);
             label2.Name = "label2";
             label2.Size = new Size (49, 20);
             label2.TabIndex = 20;
@@ -84,7 +85,7 @@
             label3.BackColor = Color.RoyalBlue;
             label3.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point (12, 147);
+            label3.Location = new Point (143, 82);
             label3.Name = "label3";
             label3.Size = new Size (120, 20);
             label3.TabIndex = 19;
@@ -101,16 +102,16 @@
             // 
             // txtsaldo
             // 
-            txtsaldo.Location = new Point (-2, 237);
+            txtsaldo.Location = new Point (-2, 174);
             txtsaldo.Name = "txtsaldo";
-            txtsaldo.Size = new Size (174, 23);
+            txtsaldo.Size = new Size (131, 23);
             txtsaldo.TabIndex = 16;
             // 
             // txtcredito
             // 
-            txtcredito.Location = new Point (-2, 170);
+            txtcredito.Location = new Point (135, 105);
             txtcredito.Name = "txtcredito";
-            txtcredito.Size = new Size (174, 23);
+            txtcredito.Size = new Size (128, 23);
             txtcredito.TabIndex = 15;
             // 
             // button4
@@ -124,9 +125,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point (-2, 279);
+            button5.Location = new Point (136, 166);
             button5.Name = "button5";
-            button5.Size = new Size (174, 36);
+            button5.Size = new Size (141, 36);
             button5.TabIndex = 12;
             button5.Text = "Emitir Tarjeta de Credito";
             button5.UseVisualStyleBackColor = true;
@@ -137,7 +138,7 @@
             pictureBox1.BackColor = Color.RoyalBlue;
             pictureBox1.Location = new Point (-2, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size (174, 468);
+            pictureBox1.Size = new Size (279, 468);
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -147,7 +148,7 @@
             label1.BackColor = Color.RoyalBlue;
             label1.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point (10, 82);
+            label1.Location = new Point (-2, 82);
             label1.Name = "label1";
             label1.Size = new Size (131, 20);
             label1.TabIndex = 21;
@@ -155,7 +156,7 @@
             // 
             // txtpagoSaldo
             // 
-            txtpagoSaldo.Location = new Point (-2, 349);
+            txtpagoSaldo.Location = new Point (-2, 335);
             txtpagoSaldo.Name = "txtpagoSaldo";
             txtpagoSaldo.Size = new Size (174, 23);
             txtpagoSaldo.TabIndex = 22;
@@ -196,17 +197,25 @@
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point (-2, 105);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size (143, 23);
+            comboBox1.Size = new Size (131, 23);
             comboBox1.TabIndex = 26;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point (-2, 241);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size (100, 23);
+            textBox1.TabIndex = 27;
             // 
             // TarjetaDeCreditoForm
             // 
             AutoScaleDimensions = new SizeF (7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size (959, 466);
+            Controls.Add (textBox1);
             Controls.Add (comboBox1);
             Controls.Add (label4);
-            Controls.Add (pictureBox2);
             Controls.Add (button1);
             Controls.Add (txtpagoSaldo);
             Controls.Add (label1);
@@ -219,6 +228,7 @@
             Controls.Add (button5);
             Controls.Add (button3);
             Controls.Add (pictureBox1);
+            Controls.Add (pictureBox2);
             Name = "TarjetaDeCreditoForm";
             Text = "TarjetaDeCreditoForm";
             Load += TarjetaDeCreditoForm_Load;
@@ -245,5 +255,6 @@
         private Label label4;
         private PictureBox pictureBox2;
         private ComboBox comboBox1;
+        private TextBox textBox1;
     }
 }
