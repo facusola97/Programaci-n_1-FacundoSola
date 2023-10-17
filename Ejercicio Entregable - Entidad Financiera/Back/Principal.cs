@@ -1,6 +1,7 @@
 ﻿using Back.Clases;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,27 +40,38 @@ namespace Back
 
         }
 
-        public static void EmitirTarjeta(double limite,double monto, double saldo)
+        public static void EmitirTarjeta ( Cliente titular, double limite, double saldo, double montoDeuda, Estados estado )
         {
-            
+            var nuevaTarjeta = new TarjetaDeCredito
+            {
+                LimiteCredito = limite,
+                Saldo = saldo,
+                MontoDeuda = montoDeuda,
+                Titular = titular,
+                NombreTitular = titular.NombreCompleto,
+                Estado = estado
+            };
 
-
+            db_context.TarjetasDeCredito.Add (nuevaTarjeta);
+            db_context.SaveChanges ();
         }
 
 
-        public static void RealizarDeposito ( string Nrocuenta, double saldo ) //Metodo 2 para cuenta bancaria
+        public static void RealizarDeposito ( CuentaBancaria cuentaBancaria, double saldo )
         {
-            var cuenta = db_context.CuentasBancarias.Find (Nrocuenta); // poner como parametro el numero de cuenta
-            if (cuenta != null)
+            // Comprobar si hay una cuenta bancaria seleccionada
+            if (cuentaBancaria != null)
             {
-                cuenta.Saldo += saldo;
+                // Mostrar un mensaje de error
+                cuentaBancaria.Saldo += saldo;
                 db_context.SaveChanges ();
+
             }
 
-
-
-
+            // Realizar el depósito
+           
         }
+
 
         public static string GenerarNumeroCuenta ( string dni )
         {
@@ -179,6 +191,29 @@ namespace Back
 
             return tipos;
         }
+
+        public static List<string> ObtenerNumerosCuenta ( )
+        {
+            // Obtener la lista de cuentas bancarias
+            var cuentasBancarias = db_context.CuentasBancarias;
+
+            // Crear una lista de números de cuenta
+            var numerosCuenta = new List<string> ();
+
+            // Iterar por la lista de cuentas bancarias y verificar que los números de cuenta no sean nulos ni vacíos
+            foreach (var cuentaBancaria in cuentasBancarias)
+            {
+                if (!string.IsNullOrWhiteSpace (cuentaBancaria.NumeroCuenta))
+                {
+                    // Agregar el número de cuenta a la lista
+                    numerosCuenta.Add (cuentaBancaria.NumeroCuenta);
+                }
+            }
+
+            // Devolver la lista de números de cuenta
+            return numerosCuenta;
+        }
+
 
 
     }

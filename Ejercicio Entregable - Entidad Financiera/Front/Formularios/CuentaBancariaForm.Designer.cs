@@ -42,8 +42,6 @@
             button1 = new Button ();
             comboBox2 = new ComboBox ();
             label3 = new Label ();
-            textBox1 = new TextBox ();
-            label5 = new Label ();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit ();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit ();
@@ -95,7 +93,7 @@
             label2.BackColor = Color.RoyalBlue;
             label2.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point (157, 98);
+            label2.Location = new Point (-1, 143);
             label2.Name = "label2";
             label2.Size = new Size (142, 20);
             label2.TabIndex = 24;
@@ -105,7 +103,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point (413, 154);
+            dataGridView1.Location = new Point (416, 177);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size (560, 279);
@@ -113,25 +111,27 @@
             // 
             // txtdni
             // 
-            txtdni.Location = new Point (157, 121);
+            txtdni.Location = new Point (-1, 166);
             txtdni.Name = "txtdni";
             txtdni.Size = new Size (142, 23);
             txtdni.TabIndex = 20;
+            txtdni.TextChanged += txtdni_TextChanged;
             // 
             // button3
             // 
-            button3.Location = new Point (-6, 402);
+            button3.Location = new Point (-1, 407);
             button3.Name = "button3";
             button3.Size = new Size (194, 31);
             button3.TabIndex = 17;
             button3.Text = "Realizar Transferencia";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point (205, 188);
+            button4.Location = new Point (-1, 301);
             button4.Name = "button4";
-            button4.Size = new Size (135, 43);
+            button4.Size = new Size (194, 40);
             button4.TabIndex = 16;
             button4.Text = "Crear Cuenta Bancaria";
             button4.UseVisualStyleBackColor = true;
@@ -142,14 +142,14 @@
             pictureBox1.BackColor = Color.RoyalBlue;
             pictureBox1.Location = new Point (-6, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size (346, 451);
+            pictureBox1.Size = new Size (194, 451);
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point (-2, 121);
+            comboBox1.Location = new Point (-1, 99);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size (134, 23);
             comboBox1.TabIndex = 25;
@@ -161,7 +161,7 @@
             label1.BackColor = Color.RoyalBlue;
             label1.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point (-3, 98);
+            label1.Location = new Point (-6, 72);
             label1.Name = "label1";
             label1.Size = new Size (125, 20);
             label1.TabIndex = 26;
@@ -169,9 +169,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point (-6, 357);
+            button1.Location = new Point (-1, 365);
             button1.Name = "button1";
-            button1.Size = new Size (194, 27);
+            button1.Size = new Size (192, 27);
             button1.TabIndex = 27;
             button1.Text = "Realizar Deposito";
             button1.UseVisualStyleBackColor = true;
@@ -180,10 +180,11 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point (-2, 188);
+            comboBox2.Location = new Point (-1, 227);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size (174, 23);
             comboBox2.TabIndex = 28;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // label3
             // 
@@ -191,38 +192,17 @@
             label3.BackColor = Color.RoyalBlue;
             label3.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point (-2, 165);
+            label3.Location = new Point (-6, 204);
             label3.Name = "label3";
             label3.Size = new Size (190, 20);
             label3.TabIndex = 29;
             label3.Text = "Seleccione el Tipo de Cuenta";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point (-2, 303);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size (142, 23);
-            textBox1.TabIndex = 30;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.RoyalBlue;
-            label5.Font = new Font ("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ControlText;
-            label5.Location = new Point (-2, 280);
-            label5.Name = "label5";
-            label5.Size = new Size (108, 20);
-            label5.TabIndex = 31;
-            label5.Text = "Ingrese el saldo";
             // 
             // CuentaBancariaForm
             // 
             AutoScaleDimensions = new SizeF (7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size (967, 450);
-            Controls.Add (label5);
-            Controls.Add (textBox1);
             Controls.Add (label3);
             Controls.Add (comboBox2);
             Controls.Add (button1);
@@ -262,7 +242,5 @@
         private Button button1;
         private ComboBox comboBox2;
         private Label label3;
-        private TextBox textBox1;
-        private Label label5;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Front.Formularios
 {
-    public partial class DepositoForm : Form
+    public partial class PantallaResumen : Form
     {
-        public DepositoForm ( )
+        public PantallaResumen ( )
         {
             InitializeComponent ();
         }

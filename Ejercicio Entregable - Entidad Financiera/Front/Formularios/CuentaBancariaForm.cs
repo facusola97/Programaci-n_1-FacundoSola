@@ -73,11 +73,14 @@ namespace Front.Formularios
 
         private void button1_Click_1 ( object sender, EventArgs e )
         {
-            // poner como parametro  data
 
-            CuentaBancaria cuentaSeleccionada = (CuentaBancaria)dataGridView1.CurrentRow.DataBoundItem;
 
-            Principal.RealizarDeposito (cuentaSeleccionada.);
+            Deposito deposito = new Deposito ();
+            deposito.Show ();
+            this.Hide ();
+
+
+
 
         }
 
@@ -89,11 +92,34 @@ namespace Front.Formularios
             Principal.CrearCuentaBancaria ((Cliente)comboBox1.SelectedItem, tipos, dni);
 
             ActualizarDataGridView ();
-
+            MessageBox.Show ("La Operación se ha realizado con éxito!!");
         }
 
         private void label2_Click ( object sender, EventArgs e )
         {
+
+        }
+
+        private void label5_Click ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void txtdni_TextChanged ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void button3_Click ( object sender, EventArgs e )
+        {
+            TansferenciaForm transferencia = new TansferenciaForm ();
+            transferencia.Show ();
+            this.Hide ();
 
         }
     }

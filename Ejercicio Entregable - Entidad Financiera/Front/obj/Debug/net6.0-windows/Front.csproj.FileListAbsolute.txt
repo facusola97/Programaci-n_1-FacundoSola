@@ -60,4 +60,5 @@ C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contruc
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.Inicio.resources
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.TarjetaDeCreditoForm.resources
 C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Properties.Resources.resources
-C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.DepositoForm.resources
+C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Deposito.resources
+C:\Users\Usuario\Desktop\1) ejerciccio entregable version 2\protecto sin contructor\SistemaEntidadFinanciera\Front\obj\Debug\net6.0-windows\Front.Formularios.TansferenciaForm.resources

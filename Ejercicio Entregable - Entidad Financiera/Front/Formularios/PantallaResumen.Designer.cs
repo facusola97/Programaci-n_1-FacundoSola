@@ -1,6 +1,6 @@
 ﻿namespace Front.Formularios
 {
-    partial class DepositoForm
+    partial class PantallaResumen
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container ();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size (800, 450);
-            this.Text = "DepositoForm";
+            this.Text = "PantallaResumen";
         }
 
         #endregion
